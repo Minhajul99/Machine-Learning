@@ -1,0 +1,7 @@
+**** Copy all dependencies from one environment and create another. ****
+
+conda  env export  >  environment.yml  = In which directory do you wanna copy.
+
+after that deactivate conda and go to the directory in which paste .
+
+conda env create --prefix ./env -f ../environment.yml
